@@ -1,5 +1,3 @@
-import { MouseEventHandler } from "react";
-
 export interface ButtonProps {
     label: string,
     onClick?: Function,
@@ -7,5 +5,7 @@ export interface ButtonProps {
     type?: "button" | "submit" | "reset",
     className?: string,
     size?: 'auto' | 'sm' | 'md' | 'lg' | 'xl' | '2xl',
-    disabled?: boolean
+    weight?: 'normal' | 'medium' | 'bold',
+    disabled?: boolean,
+    rounding?: 'sm' | 'md' | 'lg' | 'full'
 }

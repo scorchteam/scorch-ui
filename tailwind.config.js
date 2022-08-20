@@ -3,17 +3,21 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         "white": "#ffffff",
         "black": "#000000",
-        "cadet-blue": "#4DA1A9",
-        "darker-blue": "#2E5077",
-        "tyrian-purple": "#611C35",
-        "fire-opal": "#E3655B" 
+        "light": "#8DD9CC",
+        "light-accent": "#7cbfb4",
+        "dark": "#2E5077",
+        "dark-accent": "#"
       }
     },
+    content: {
+      safelist: [/text-/]
+    }
   },
   plugins: [],
 }
